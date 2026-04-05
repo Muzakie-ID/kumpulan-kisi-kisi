@@ -116,7 +116,7 @@
             @foreach($mapels as $mapel)
             <div class="flex justify-between items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
                 <span class="text-sm font-semibold text-gray-800"><i class="fas {{ $mapel->icon }} mr-2 text-gray-500"></i> {{ $mapel->nama }}</span>
-                <form action="{{ route('admin.destroyMapel', $mapel->id) }}" method="POST" onsubmit="return confirm('Yakin hapus mapel ini? Semua dokumen di dalamnya akan ikut terhapus permanen loh!');">
+                <form action="{{ route('admin.destroyMapel', $mapel->id) }}" method="POST" class="inline" onsubmit="return confirm('Yakin hapus mapel ini? Semua dokumen di dalamnya akan ikut terhapus permanen loh!');">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="text-red-500 hover:text-red-700 p-2 bg-red-50 rounded-lg" title="Hapus Mapel"><i class="fas fa-trash"></i></button>
@@ -134,7 +134,7 @@
                     <p class="text-sm font-bold text-gray-800 truncate" title="{{ $dok->judul }}">{{ Str::limit($dok->judul, 25) }}</p>
                     <p class="text-xs text-gray-500">{{ $dok->mapel->nama }} • {{ $dok->created_at->format('d M') }}</p>
                 </div>
-                <form action="{{ route('admin.destroyDokumen', $dok->id) }}" method="POST" onsubmit="return confirm('Yakin mau menghapus dokumen ini?');">
+                <form action="{{ route('admin.destroyDokumen', $dok->id) }}" method="POST" class="inline" onsubmit="return confirm('Yakin mau menghapus dokumen ini?');">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="text-red-500 hover:text-red-700 p-2 bg-red-50 rounded-lg ml-2 flex-shrink-0" title="Hapus Dokumen"><i class="fas fa-trash-alt"></i></button>
