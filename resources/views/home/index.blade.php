@@ -19,7 +19,7 @@
         </span>
         <input type="text" name="q" 
                class="w-full py-3 pl-10 pr-4 bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-xl transition" 
-               placeholder="Cari kisi-kisi (ex. MTK UTS)...">
+               placeholder="Cari dokumen (ex. MTK UTS)...">
     </form>
 </div>
 

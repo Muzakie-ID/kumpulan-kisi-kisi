@@ -15,7 +15,7 @@
             </div>
             <div>
                 <h2 class="text-xl font-extrabold text-gray-800">{{ $mapel->nama }}</h2>
-                <p class="text-xs text-gray-500 font-medium">{{ count($dokumens) }} Kisi-kisi/Dokumen dikumpulkan</p>
+                <p class="text-xs text-gray-500 font-medium">{{ count($dokumens) }} Dokumen dikumpulkan</p>
             </div>
         </div>
     </div>

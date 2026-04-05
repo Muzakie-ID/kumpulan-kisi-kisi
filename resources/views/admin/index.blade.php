@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Upload Kisi-Kisi - Dokumen XII RPL')
+@section('title', 'Upload Dokumen - Dokumen XII RPL')
 
 @section('content')
 <div class="mb-4 mt-2">
@@ -47,7 +47,7 @@
             <!-- Judul Dokumen -->
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2">Judul Dokumen</label>
-                <input name="judul" required type="text" placeholder="Misal: Kisi-kisi UTS Genap Fisika..." class="w-full bg-gray-50 border border-gray-200 text-gray-700 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500">
+                <input name="judul" required type="text" placeholder="Misal: Dokumen UTS Genap Fisika..." class="w-full bg-gray-50 border border-gray-200 text-gray-700 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500">
             </div>
 
             <!-- Catatan (Opsional) -->

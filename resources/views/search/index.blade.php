@@ -11,7 +11,7 @@
         </span>
         <input type="text" name="q" value="{{ $query ?? '' }}" autofocus
                class="w-full py-4 pl-10 pr-20 bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-xl transition text-md text-gray-800 font-medium" 
-               placeholder="Cari kisi-kisi atau mapel...">
+               placeholder="Cari dokumen atau mapel...">
         <button type="submit" class="absolute inset-y-0 right-0 px-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold transition">
             Cari
         </button>
