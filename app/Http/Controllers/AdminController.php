@@ -59,7 +59,7 @@ class AdminController extends Controller
             'icon' => $request->icon ?? 'fa-book'
         ]);
 
-        return redirect()->back()->with('success', 'Mata Pelajaran berhasil ditambahkan!');
+        return redirect()->route('admin.upload')->with('success', 'Mata Pelajaran berhasil ditambahkan!');
     }
 
     public function destroyMapel($id)
@@ -73,7 +73,7 @@ class AdminController extends Controller
         
         $mapel->delete(); // Dokumen di DB otomatis ikut terhapus berkat onDelete('cascade')
         
-        return redirect()->back()->with('success', 'Mata Pelajaran beserta seluruh dokumen di dalamnya berhasil dihapus!');
+        return redirect()->route('admin.upload')->with('success', 'Mata Pelajaran beserta seluruh dokumen di dalamnya berhasil dihapus!');
     }
 
     public function destroyDokumen($id)
@@ -83,6 +83,6 @@ class AdminController extends Controller
         Storage::disk('public')->delete($dokumen->path_file);
         $dokumen->delete();
         
-        return redirect()->back()->with('success', 'Dokumen berhasil dihapus!');
+        return redirect()->route('admin.upload')->with('success', 'Dokumen berhasil dihapus!');
     }
 }
