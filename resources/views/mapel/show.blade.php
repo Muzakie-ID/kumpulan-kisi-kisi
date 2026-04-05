@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Dokumen ' . $mapel->nama . ' - Pustaka')
+@section('title', 'Dokumen ' . $mapel->nama . ' - Dokumen XII RPL')
 
 @section('content')
 <div class="mb-6 mt-2">

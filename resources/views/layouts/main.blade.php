@@ -17,7 +17,7 @@
     <!-- Header App -->
     <header class="bg-blue-600 text-white p-4 shadow-md sticky top-0 z-50">
         <div class="max-w-md mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold"><i class="fas fa-book-open mr-2"></i>Pustaka Kisi-Kisi</h1>
+            <h1 class="text-xl font-bold"><i class="fas fa-book-open mr-2"></i>Dokumen XII RPL</h1>
             <a href="#" class="text-white hover:text-gray-200"><i class="fas fa-bell"></i></a>
         </div>
     </header>

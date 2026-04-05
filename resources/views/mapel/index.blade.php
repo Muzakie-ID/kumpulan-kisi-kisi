@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Mata Pelajaran - Pustaka Kisi-Kisi')
+@section('title', 'Mata Pelajaran - Dokumen XII RPL')
 
 @section('content')
 <div class="mb-4 mt-2">

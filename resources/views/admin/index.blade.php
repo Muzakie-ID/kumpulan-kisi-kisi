@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Upload Kisi-Kisi - Pustaka Kisi-Kisi')
+@section('title', 'Upload Kisi-Kisi - Dokumen XII RPL')
 
 @section('content')
 <div class="mb-4 mt-2">
@@ -13,7 +13,7 @@
 
     <div class="bg-blue-50 border border-blue-200 p-4 rounded-xl text-blue-700 text-sm mb-6 flex items-start space-x-3">
         <i class="fas fa-info-circle mt-1"></i>
-        <p>Gunakan menu ini untuk mengunggah <b>(upload)</b> dokumen baru ke Pustaka. Pastikan file materi benar dan formatnya didukung.</p>
+        <p>Gunakan menu ini untuk mengunggah <b>(upload)</b> dokumen baru ke XII RPL. Pastikan file materi benar dan formatnya didukung.</p>
     </div>
 
     <!-- Form Container -->

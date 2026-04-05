@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Beranda - Pustaka Kisi-Kisi')
+@section('title', 'Beranda - Dokumen XII RPL')
 
 @section('content')
 
