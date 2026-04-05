@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kumpulan_kisi_app
+    restart: always
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+    environment:
+      # Koneksi Database mengarah ke Container Eksternal MySQL
+      DB_CONNECTION: mysql
+      DB_HOST: mysql_db
+      DB_PORT: 3306
+      DB_DATABASE: db_kisi_kisi
+      DB_USERNAME: root     # Sesuaikan dengan user database eksternal kamu
+      DB_PASSWORD: ""       # Sesuaikan dengan password database eksternal kamu, atau hilangkan jika tak perlu
+    networks:
+      - app_internal_net
+      - external_db_link
+
+  web:
+    image: nginx:alpine
+    container_name: kumpulan_kisi_nginx
+    restart: always
+    ports:
+      - "8101:80"
+    volumes:
+      - ./:/var/www
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
+    networks:
+      - app_internal_net
+
+networks:
+  app_internal_net:
+    driver: bridge
+
+  external_db_link:
+    external: true
+    name: db_master_shared
